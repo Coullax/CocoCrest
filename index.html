@@ -151,7 +151,40 @@
 
 
   </section>
-  <section></section>
+
+  <section>
+
+    <div class="slider-position mr-[13.177vw]">
+      <div class="swiper mySwiper web-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://picsum.photos/600/400"></div>
+          <div class="swiper-slide"><img src="https://picsum.photos/600/400"></div>
+          <div class="swiper-slide"><img src="https://picsum.photos/600/400"></div>
+          <div class="swiper-slide"><img src="https://picsum.photos/600/400"></div>
+          <div class="swiper-slide"><img src="https://picsum.photos/600/400"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper mobile-swiper mobile-mySwiper">
+        <div class="swiper-wrapper mobile-swiper-wrapper">
+          <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"></div>
+          <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"></div>
+          <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"></div>
+          <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"></div>
+          <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"></div>
+        </div>
+        <div class="mobile-swiper-pagination swiper-pagination"></div>
+      </div>
+
+
+    </div>
+    
+
+
+
+
+  </section>
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
@@ -165,11 +198,43 @@
             disableOnInteraction: false
           },
     });
-    var thumb = document.querySelectorAll(".thumbContainer");
-    thumb.forEach(function(image, index) {
-      var delay = index * 90;
-      image.classList.add("fadeInSlide");
-      image.style.animationDelay = delay + "ms";
+    // var thumb = document.querySelectorAll(".thumbContainer");
+    // thumb.forEach(function(image, index) {
+    //   var delay = index * 90;
+    //   image.classList.add("fadeInSlide");
+    //   image.style.animationDelay = delay + "ms";
+    // });
+
+
+    var swiper = new Swiper(".mySwiper", {
+      loopedSlides: 5,
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+            delay: 1000,
+            disableOnInteraction: false
+      },
+    });
+
+    var swiper = new Swiper(".mobile-mySwiper", {
+      spaceBetween: 30,
+      loopedSlides: 5,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      
+      autoplay: {
+            delay: 1000,
+            disableOnInteraction: false
+      },
     });
   </script>
 </body>
