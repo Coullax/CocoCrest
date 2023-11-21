@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap');
+body{
+  background-color: #fff3dc;
+}
+
+.Mask-group1 {
+  width: 23.4%;
+  height: auto;
+  margin-right: auto;
+}
+
+.Mask-group {
+  width: 12.448vw;
+  height:20%;
+  margin-left: 14.7%;
+}
+
+@media (max-width: 580px) {
+  .Mask-group{
+    display: none;
+  }
+}
+
+.coconut-leaves-1 {
+  width: 37.761%;
+  height: auto;
+  margin-left: auto;
+}
+
+.position-one {
+  margin-left: 13.088%;
+  top: 10px;
+  position: relative;
+}
+
+.position {
+  margin-left: 13.088%;
+  padding-top: 2.500vw;
+  bottom: 31.635vw;
+  position: relative;
+}
+
+.group20{
+  width: 36%;
+}
+
+@media screen and (max-width: 834px) {
+  .group20{
+    width: 36.7%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .group20{
+    width: 76.4%;
+  }
+}
+
+.design-cococrest-one {
+  width: 7.656vw;
+}
+.design-cococrest-two {
+  width: 7.656vw;
+}
+
+.font-family {
+  font-family:'DM Sans';
+  color: #423E35;
+  font-size: 2.902vw;
+  margin-top: 0.677vw;
+}
+
+@media screen and (max-width: 834px) {
+  .font-family{
+    font-size: 3.906vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .font-family{
+    font-size: 38.60px;
+  }
+}
+
+.button {
+  display: inline-block;
+  width: 12.16%;
+  font-family: 'DM Sans';
+  text-align: center;
+  line-height: 3.0395vw;
+  font-size: 1.361vw;
+  font-weight: bold;
+  margin: 0.573vw;
+  border-radius: 1.563vw;
+}
+
+
+.callus-button {
+  width: 12.16%;
+}
+
+@media screen and (max-width: 834px) {
+  .callus-button {
+    width: 36.853vw;
+    line-height: 6.715vw;
+  }
+}
+
+.padding-button {
+  padding-top: 1.354vw;
+  font-family: "DM Sans";
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Styles for screens 834px or less */
+@media (max-width: 834px) {
+  .button-container {
+    flex-direction: column;
+  }
+}
+
+
+.coconut {
+  width: 39.323vw;
+  margin: 0px 34.375vw 0px;
+  margin-top: -9%;
+  object-fit: cover;
+  flex-grow: 1;
+  flex-basis: 0%;
+}
+
+@media screen and (max-width: 834px) {
+  .coconut {
+    width: 43.285vw;
+    margin: 0px 37.759vw 0px;
+    margin-top: -5%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .coconut {
+    margin: 0px 50% 0px;
+    margin-top: 4%;
+  }
+}
+
+.badges {
+  width: 5vw;
+}
