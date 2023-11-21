@@ -30,12 +30,21 @@
         <image class="group20" alt="alternate text" src="./assets/Group 20.svg"></image>
         <image class="absolute coconut" alt="alternate text" src="./assets/coconut.svg"></image>
       </div>
+
+
       <h1 class="font-semibold tracking-tighter max-md:max-w-full font-family">Harvested from the Heart<br/>of Organic Richness</h1>
-      <div id="parent" class="justify-center pt-[1.510vw] padding-button">
-        <a href="tel:+1234567890" class="button bg-[#8D3232] text-white callus-button">Call Us</a>
-        <a id="email" href="mailto:info@example.com" class="button bg-[#EFE1C5] text-[#423E35]">Email Us</a>
-        <a id="whatsapp" href="whatsapp.com" class="button bg-[#EFE1C5] text-[#423E35]">WhatsApp Us</a>
+      
+      
+      <div id="parent" class="pt-[1.510vw] padding-button">
+        <div href="tel:+1234567890" class="button bg-[#8D3232] text-white callus-button">
+          Call Us
+        </div>
+        <!-- <a href="tel:+1234567890" class="button bg-[#8D3232] text-white callus-button">Call Us</a> -->
+        <div href="mailto:info@example.com" class="button bg-[#EFE1C5] text-[#423E35]">Email Us</div>
+        <div href="whatsapp.com" class="button bg-[#EFE1C5] text-[#423E35]">WhatsApp Us</div>
       </div>
+
+
       <div class="flex flex-col items-stretch max-md:px-5">
         <div class="text-[#423E35] text-[1.418vw] font-bold  whitespace-nowrap mt-8 max-md:max-w-full">Approved by</div>
         <div class="flex items-start mr-0 mt-3 mb-4 max-md:flex-wrap">
@@ -185,25 +194,84 @@
 
 
   </section>
+
+
+  <section>
+    <div class="contact-bar mr-[13.177vw]">
+      <div class="contact-btn ">
+        <div class="contact-button"><button class="cn-btn">Whatsapp</button></div>
+        <div class="contact-button"><button class="cn-btn call-btn">Call Us</button></div>
+        <div class="contact-button"><button class="cn-btn">Email</button></div>
+      </div>
+    </div>
+    
+  </section>
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".swiper-container", {
-      loopedSlides: 8,
-      loop: true,
-      slidesPerView: "auto",
-      freeMode: true,
-      autoplay: {
-            delay: 1000,
-            disableOnInteraction: false
-          },
-    });
-    // var thumb = document.querySelectorAll(".thumbContainer");
-    // thumb.forEach(function(image, index) {
-    //   var delay = index * 90;
-    //   image.classList.add("fadeInSlide");
-    //   image.style.animationDelay = delay + "ms";
+    // var swiper = new Swiper(".swiper-container", {
+    //   loopedSlides: 8,
+    //   loop: true,
+    //   slidesPerView: "auto",
+    //   freeMode: true,
+    //   // breakpoints:{
+    //   //     // when window width is >= 320px
+    //   //     320: {
+    //   //       slidesPerView: 2,
+    //   //       spaceBetween: 150,
+    //   //     },
+    //   //     // when window width is >= 480px
+    //   //     480: {
+    //   //       slidesPerView: 3,
+    //   //       spaceBetween: 10,
+    //   //     },
+    //   //     // when window width is >= 640px
+    //   //     640: {
+    //   //       slidesPerView: 4,
+    //   //       spaceBetween: 180,
+    //   //     },
+    //   //     768: {
+    //   //       slidesPerView: 7,
+    //   //       spaceBetween: 40,
+    //   //     },
+    //   //     1024: {
+    //   //       slidesPerView: 8,
+    //   //       spaceBetween: 50,
+    //   //     },
+    //   //   },
+    //       autoplay: {
+    //         delay: 1,
+    //         disableOnInteraction: false,
+    //       },
+    //       speed:5000,
+    //       freeModeMomentum:false,
+    //       //loopFillGroupWithBlank: true
     // });
+    // // var thumb = document.querySelectorAll(".thumbContainer");
+    // // thumb.forEach(function(image, index) {
+    // //   var delay = index * 90;
+    // //   image.classList.add("fadeInSlide");
+    // //   image.style.animationDelay = delay + "ms";
+    // // });
+
+    var swiperOptions = {
+  loop: true,
+  freeMode: true,
+  spaceBetween: 0,
+  grabCursor: true,
+  slidesPerView: 8,
+  loop: true,
+  slidesPerView: "auto",
+  autoplay: {
+    delay: 1,
+    disableOnInteraction: true
+  },
+  freeMode: true,
+  speed: 5000,
+  freeModeMomentum: false
+};
+
+var swiper = new Swiper(".swiper-container", swiperOptions);
 
 
     var swiper = new Swiper(".mySwiper", {

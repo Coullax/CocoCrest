@@ -189,7 +189,9 @@ body{
 .swiper-wrapper {
   display: flex;
   align-items: center;
-
+  -webkit-transition-timing-function:linear!important; 
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important;
 }
 
 
@@ -260,4 +262,40 @@ body{
   .mobile-swiper{
     display: block !important;
   }
+}
+
+
+.contact-btn {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 3px;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact-bar{
+  background-color: #8D3232;
+  margin-left: 13.088%;
+  padding-top: 2.500vw;
+  bottom: 31.635vw;
+  height: 120px;
+  justify-content: center;
+
+}
+
+
+
+.contact-button{
+  
+  
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.cn-btn{
+  padding: 5px 50px 5px 50px;
+  border-radius: 33px;
+  border: 1.502px solid #FFB22B;
+  text-align: center;
 }
