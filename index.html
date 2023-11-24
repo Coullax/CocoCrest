@@ -5,102 +5,369 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Cococrest</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+  <link type="html/text" rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
   <script src="./script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
   <section>
     <div class="flex">
-      <image class="Mask-group1" alt="alternate text" src="./assets/Mask group-1.png"></image>
+      <image class="Mask-group1 " alt="alternate text" src="./assets/Mask group-1.png"></image>
+      <image class="Mask-group1 Mask-group1-two" alt="alternate text" src="./assets/Vector.svg"></image>
       <image class="Mask-group" alt="alternate text" src="./assets/Group 1000002845.svg"></image>
-      <image class="coconut-leaves-1" alt="alternate text" src="./assets/Mask group.svg"></image>
+      <image class="coconut-leaves-1 coconut-leaves-one" alt="alternate text" src="./assets/Mask group.svg"></image>
+      <image class="coconut-leaves-1 coconut-leaves-two" alt="alternate text" src="./assets/Mask group-coconut.svg"></image>
     </div>
     <div class="flex justify-between gap-5 max-md:flex-wrap">
-      <img class="-mt-[1.781vw] design-cococrest-two" loading="lazy" src="./assets/design.svg" alt="Image 1" />
-      <img class=" mt-[17.708vw] relative design-cococrest-one" loading="lazy" src="./assets/design.svg" alt="Image 2" />
+      <img class="-mt-[1.781vw] design-cococrest-two top-two" loading="lazy" src="./assets/design.svg" alt="Image 1" />
+      <img class=" mt-[17.708vw] relative design-cococrest-one top-two" loading="lazy" src="./assets/design.svg" alt="Image 2" />
+      <img class="-mt-[1.781vw] design-cococrest-two top-none" loading="lazy" src="./assets/Group 1000002841.svg" alt="Image 1" />
+      <img class=" mt-[17.708vw] relative design-cococrest-one top-none" loading="lazy" src="./assets/Group 1000002842.svg" alt="Image 2" />
     </div>
     <div class="position">
       <div class="flex relative">
         <image class="group20" alt="alternate text" src="./assets/Group 20.svg"></image>
         <image class="absolute coconut" alt="alternate text" src="./assets/coconut.svg"></image>
       </div>
-      <h1 class="font-semibold tracking-tighter max-md:max-w-full font-family">Harvested from the Heart<br/>of Organic Richness</h1>
-      <div id="parent" class="justify-center pt-[1.510vw] padding-button">
+      <h1 class="font-bold font-family">Harvested from the Heart<br/>of Organic Richness</h1>
+      <div id="parent" class="justify-center pt-[1.510vw] padding-button margin-right">
         <a href="tel:+1234567890" class="button bg-[#8D3232] text-white callus-button">Call Us</a>
-        <a id="email" href="mailto:info@example.com" class="button bg-[#EFE1C5] text-[#423E35]">Email Us</a>
-        <a id="whatsapp" href="whatsapp.com" class="button bg-[#EFE1C5] text-[#423E35]">WhatsApp Us</a>
+        <a id="email" href="mailto:info@example.com" class="button mystyle bg-[#EFE1C5] text-[#423E35]">Email Us</a>
+        <a id="whatsapp" href="whatsapp.com" class="button mystyle bg-[#EFE1C5] text-[#423E35]">WhatsApp Us</a>
       </div>
-      <div class="flex flex-col items-stretch max-md:px-5">
-        <div class="text-[#423E35] text-[1.418vw] font-bold  whitespace-nowrap mt-8 max-md:max-w-full">Approved by</div>
+      <div class="flex flex-col items-stretch">
+        <div class="text-[#423E35] Approved font-bold  whitespace-nowrap mt-8">Approved by</div>
         <div class="flex items-start mr-0 mt-3 mb-4 max-md:flex-wrap">
-          <img loading="lazy" class="badges" src="./assets/coconut development authority.svg" class=""/>
-          <img loading="lazy" class="badges" src="./assets/Coconut Research Institute.svg" class="" />
-          <img loading="lazy" class="badges" src="./assets/coconut cultivation board.svg" class="" />
-          <img loading="lazy" src="./assets/Lion.svg" class="badges"/>
-          <img loading="lazy" class="badges" src="./assets/Certified.svg"class=""/>
+          <img loading="lazy" class="badges" src="./assets/coconut development authority.svg" />
+          <img loading="lazy" class="badges" src="./assets/Coconut Research Institute.svg"  />
+          <img loading="lazy" class="badges" src="./assets/coconut cultivation board.svg"  />
+          <img loading="lazy" class="badges" src="./assets/Lion.svg"/>
+          <img loading="lazy" class="badges" src="./assets/Certified.svg"/>
         </div>
       </div>
     </div>
   </section>
   <section>
     <div class="position mr-[13.177vw]">
-      <div class="flex flex-col items-stretch -mb-0.5">
-        <h1 class="text-orange-500 text-5xl font-bold leading-10 w-full -mr-5 max-md:max-w-full">
-          <span class="text-stone-700">Welcome to</span>
-          <span class="text-orange-500">Cococrest</span>
+      <div class="flex flex-col items-stretch -mb-[15vw]">
+        <h1 class="welcome font-bold leading-10 w-full -mr-5">
+          <span class="text-[#423E35]">Welcome to</span>
+          <span class="text-[#FA7333]">Cococrest</span>
         </h1>
-        <p class="text-stone-700 text-2xl leading-7 w-full -mr-5 mt-7 mb-24 pr-52">
+        <p class="text-[#423E35] welcome-para w-full mt-7">
           Your gateway to the pinnacle of organic coconut excellence. Nestled at the crest of quality and freshness, Cococrest is a brand that embodies the essence of nature's bounty. From our tropical haven to your home, we curate and export premium organic coconuts, ensuring that each Cococrest produce carries the unmistakable mark of pure, wholesome goodness.
         </p>
-      </div>
-      <div class="bg-[#EFE1C5] flex grow basis-[0%] flex-col items-center pt-12 pb-9 px-2 max-md:max-w-full">
-        <div class="flex w-full max-w-[1199px] flex-col items-stretch mt-2.5 max-md:max-w-full">
-          <div class="max-md:max-w-full">
-            <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-              <div class="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
-                <img loading="lazy" src="./assets/Leaf.svg"class="aspect-[0.99] object-contain object-center w-full overflow-hidden max-md:mt-10" />
-              </div>
-              <div class="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
-                <div class="flex flex-col items-stretch rounded-[50%] max-md:mt-10">
-                  <img loading="lazy" src="./assets/Box.svg"class="aspect-square object-contain object-center w-full overflow-hidden" />
-                </div>
-              </div>
-              <div class="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
-                <div class="flex flex-col items-stretch rounded-[50%] max-md:mt-10">
-                  <img loading="lazy" src="./assets/Coconut Tree.svg"class="aspect-square object-contain object-center w-full overflow-hidden" />
-                </div>
-              </div>
-              <div class="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
-                <img loading="lazy" src="./assets/Srilanka.svg"class="aspect-square object-contain object-center w-full overflow-hidden rounded-[50%] max-md:mt-10" />
-              </div>
-            </div>
-          </div>
-          <div class="self-center flex w-full justify-between gap-5 mt-14 max-md:max-w-full max-md:flex-wrap max-md:justify-center max-md:mt-10">
-            <div class="text-[#232323] text-center text-2xl font-bold leading-7 grow shrink basis-auto"> Fresh <br /> organic produce </div>
-            <div class="text-[#232323] text-center text-2xl font-bold leading-7 grow shrink basis-auto"> Top Quality <br /> manufacturing process </div>
-            <div class="text-[#232323] text-center text-2xl font-bold leading-7 grow shrink basis-auto"> Pure <br /> tropical harvest </div>
-            <div class="text-[#232323] text-center text-2xl font-bold leading-7 grow shrink basis-auto"> Proud Sri Lankan<br/> produce </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="bg-[#EFE1C5] flex items-stretch justify-between gap-5 max-md:flex-wrap max-md:justify-center">⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-      ⣿⣿⣿⡟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⢹⣿⣿⣿
-      ⣿⣿⣿⡇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿
-      ⣿⣿⣿⡇⠄⠄⠄⢠⣴⣾⣵⣶⣶⣾⣿⣦⡄⠄⠄⠄⢸⣿⣿⣿
-      ⣿⣿⣿⡇⠄⠄⢀⣾⣿⣿⢿⣿⣿⣿⣿⣿⣿⡄⠄⠄⢸⣿⣿⣿
-      ⣿⣿⣿⡇⠄⠄⢸⣿⣿⣧⣀⣼⣿⣄⣠⣿⣿⣿⠄⠄⢸⣿⣿⣿
-      ⣿⣿⣿⡇⠄⠄⠘⠻⢷⡯⠛⠛⠛⠛⢫⣿⠟⠛⠄⠄⢸⣿⣿⣿
-      ⣿⣿⣿⡇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿
-      ⣿⣿⣿⣧⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢡⣀⠄⠄⢸⣿⣿⣿
-      ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣆⣸⣿⣿⣿
-      ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿</div>
+    <div class="position mr-[13.177vw] tab-center1">
+      <div class="bg-[#EFE1C5] flex grow basis-[0%] flex-col items-center pt-12 pb-9 px-2 ">
+        <div class="flex w-full flex-col items-stretch mt-2.5  ">
+          <div class="max-md:max-w-full rd-mg">
+            <div class="gap-5 flex max-md:items-stretch">
+              <div class="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
+                <img loading="lazy" src="./assets/Leaf.svg"class="aspect-[0.99] object-contain object-center w-full overflow-hidden " />
+                <div class="self-center flex  justify-between gap-5   flex-nowrap justify-center mt-6">
+                  <div class="text-[#232323] text-center  font-bold leading-1 grow shrink basis-auto cn-tx-web"> Fresh <br /> organic produce </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
+                <div class="flex flex-col items-stretch rounded-[50%] ">
+                  <img loading="lazy" src="./assets/Box.svg"class="aspect-square object-contain object-center w-full overflow-hidden" />
+                  <div class="self-center flex  justify-between gap-5   flex-nowrap justify-center mt-6">
+                    <div class="text-[#232323] text-center  font-bold leading-1 grow shrink basis-auto cn-tx-web"> Top Quality <br /> manufacturing process </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
+                <div class="flex flex-col items-stretch rounded-[50%] ">
+                  <img loading="lazy" src="./assets/Coconut Tree.svg"class="aspect-square object-contain object-center w-full overflow-hidden" />
+                  <div class="self-center flex  justify-between gap-5   flex-nowrap justify-center mt-6">
+                    <div class="text-[#232323] text-center  font-bold leading-1 grow shrink basis-auto cn-tx-web"> Pure <br /> tropical harvest </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
+                <img loading="lazy" src="./assets/Srilanka.svg"class="aspect-square object-contain object-center w-full overflow-hidden rounded-[50%] " />
+                <div class="self-center flex  justify-between gap-5   flex-nowrap justify-center mt-6">
+                  <div class="text-[#232323] text-center  font-bold leading-1 grow shrink basis-auto cn-tx-web"> Proud Sri Lankan<br/> produce </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#EFE1C5] flex mt-[11vw]">
+      <div class="grid-containers">
+        <div class="grid-items"><div class="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
+          <img loading="lazy" src="./assets/Leaf.svg"class="aspect-[0.99] object-contain object-center w-full overflow-hidden " />
+          <div class="text-[#232323] text-center  font-bold  grow shrink basis-auto ct-mobi-tx"> Fresh <br /> organic produce </div>
+        </div></div>
+        <div class="grid-items"><div class="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
+          <img loading="lazy" src="./assets/Box.svg"class="aspect-[0.99] object-contain object-center w-full overflow-hidden " />
+          <div class="text-[#232323] text-center  font-bold  grow shrink basis-auto ct-mobi-tx"> Top Quality <br /> manufacturing process </div>
+        </div></div>
+        <div class="grid-items"><div class="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
+          <img loading="lazy" src="./assets/Coconut Tree.svg"class="aspect-[0.99] object-contain object-center w-full overflow-hidden " />
+          <div class="text-[#232323] text-center  font-bold  grow shrink basis-auto ct-mobi-tx"> Pure <br /> tropical harvest </div>
+        </div></div>  
+        <div class="grid-items"><div class="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
+          <img loading="lazy" src="./assets/Srilanka.svg"class="aspect-[0.99] object-contain object-center w-full overflow-hidden " />
+          <div class="text-[#232323] text-center  font-bold  grow shrink basis-auto ct-mobi-tx"> Proud Sri Lankan<br/> produce </div>
+        </div></div>
+      </div>
+    </div>
   </section>
-  <section></section>
-  <section></section>
+  <section>
+    <div class="upper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-img">
+              <img src="https://picsum.photos/600/400">
+          </div>
+
+          <div class="swiper-slide slide-img">
+              <img src="https://picsum.photos/600/400">
+          </div>
+      
+          <div class="swiper-slide slide-img">
+              <img src="https://picsum.photos/600/400">
+          </div>
+      
+          <div class="swiper-slide slide-img">
+              <img src="https://picsum.photos/600/400">
+          </div>
+        
+          <div class="swiper-slide slide-img">
+              <img src="https://picsum.photos/600/400">
+          </div>
+        
+          <div class="swiper-slide slide-img">
+              <img src="https://picsum.photos/600/400">
+          </div>
+        
+          <div class="swiper-slide slide-img">
+              <img src="https://picsum.photos/600/400">
+          </div>
+        
+          <div class="swiper-slide slide-img">
+              <img src="https://picsum.photos/600/400">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section>
+    <img class="flower-left absolute" alt="alternate text" src="./assets/flower left.svg" />
+    <div class="position mr-[13.177vw] margin-one">
+      <h1 class="font-bold leading-[2.708vw] fresh">Our fresh<br/>export quality produce</h1>
+      <div class="mt-12">
+        <img class="coconut-banner top-[2.708vw]" alt="alternate text" src="./assets/king coconut image.svg"/>
+      </div>
+      <div class="slider-position">
+        <div class="swiper mySwiper web-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mobile-swiper mobile-mySwiper">
+          <div class="swiper-wrapper mobile-swiper-wrapper">
+            <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+          </div>
+          <div class="mobile-swiper-pagination swiper-pagination"></div>
+        </div>
+      </div>
+      <img loading="lazy" class="Tapioca" src="./assets/Tapioca.svg" alt="Image 1"/>
+      <div class="slider-position">
+        <div class="swiper mySwiper web-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mobile-swiper mobile-mySwiper">
+          <div class="swiper-wrapper mobile-swiper-wrapper">
+            <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+            <div class="swiper-slide mobile-swiper-slide"><img src="https://picsum.photos/600/400"/></div>
+          </div>
+          <div class="mobile-swiper-pagination swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <section>
+
+      <div class="new-one contact-position mr-[13.177%] ">
+        <div class="contact-br flex grow basis-[0%] flex-col items-center  px-2 max-md:max-w-full con">
+          <div class="position-cbr">
+            <div class="main-container ">
+              <button class="cn-btn whatsapp">Whatsapp</button>
+              <button class="cn-btn  call-us">Call Us</button>
+              <button class="cn-btn  email">Email</button>
+            </div>
+          </div>
+    
+    
+    
+        
+          <div class="flex w-full max-w-[1199px] flex-col items-stretch max-md:max-w-full btn-div1">
+            <div class="max-md:max-w-full">
+              <div class="flex gap-20 max-md:flex-col  gap-cn">
+                <div class="flex flex-col items-stretch w-4/12 ml-5 max-md:w-full max-md:ml-0 btn-contain">
+                    <button class="cn-btn from-left aspect-[0.99] object-contain object-center w-full overflow-hidden  web-btn">Whatsapp</button>
+                    <button class="cn-btn call-btn aspect-square object-contain object-center w-full overflow-hidden mobi-btn">Call Us</button>
+                </div>
+                <div class="flex flex-col items-stretch w-4/12 ml-5 max-md:w-full max-md:ml-0 btn-contain">
+                    <button class="cn-btn call-btn aspect-square object-contain object-center w-full overflow-hidden web-btn">Call Us</button>
+                    <button class="cn-btn aspect-[0.99] object-contain object-center w-full overflow-hidden  mobi-btn">Whatsapp</button>
+                </div>
+                <div class="flex flex-col items-stretch w-4/12 ml-5 max-md:w-full max-md:ml-0 mt-btn btn-contain">
+                  <button class="cn-btn aspect-square object-contain object-center w-full overflow-hidden">Email</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    
+    
+        </div>
+      </div>
+      
+    </section>
+  
+  
+    <section>
+      <footer class="footer text-center">
+        <div class="ff-mobi mr-[13.177%] ml-[13.088%]">
+            <div
+              class="max-[580px]:gird-cols-1 grid items-center justify-center gap-1 min-[580px]:grid-cols-3 mg-foot">
+              <div class="mb-4 justify-center">
+                <img src="./assets/footer_logo.svg" alt="cococrest-logo" class="cococrest-logo-footer">
+              </div>
+      
+              <div class="flex justify-center hide-ele mb-4" data-te-input-wrapper-init>
+                  <div class="text-wrapper">Contact us : +94123456789</div>
+              </div>
+      
+              <div class="mb-4 flex justify-end ">
+                  <a href="#" class="pd-footer"><img src="./assets/inster.png"  class="m-1 footer_logo"></a>
+                  <a href="#" class="pd-footer"><img src="./assets/facebook.png"  class="m-1 footer_logo"></a>
+                  <a href="#" class="pd-footer"><img src="./assets/x.png"  class="m-1 footer_logo"></a>
+                  <a href="#" ><img src="./assets/tiktok.png"  class="m-1 footer_logo"></a>
+              </div>
+            </div>
+        </div>
+      </footer>
+    </section>
+  </section>
+
+
+
+  
+  <script>
+    var swiperOptions = new Swiper(".swiper-container", {
+      loop: true,
+      freeMode: true,
+      spaceBetween: 0,
+      grabCursor: true,
+      draggable : true,
+      hide: false,
+      snapOnRelease: true,
+      slidesPerView: 'auto',
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: true,
+      },
+      speed: 5000,
+      freeModeMomentumRatio: false,
+      breakpoints:{
+    // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 5,
+      },
+    // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+    // when window width is >= 640px
+      580: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      834: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 5,
+      },
+    },
+    });
+    // var thumb = document.querySelectorAll(".thumbContainer");
+    // thumb.forEach(function(image, index) {
+    //   var delay = index * 90;
+    //   image.classList.add("fadeInSlide");
+    //   image.style.animationDelay = delay + "ms";
+    // });
+
+
+    var swiper = new Swiper(".mySwiper", {
+      loopedSlides: 5,
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+      },
+    });
+
+    var swiper = new Swiper(".mobile-mySwiper", {
+      spaceBetween: 100,
+      loopedSlides: 10,
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      
+      autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+      },
+    });
+  </script>
 </body>
 </html>
