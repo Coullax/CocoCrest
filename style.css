@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
 body{
   background-color: #fff3dc;
 }
@@ -168,6 +170,13 @@ body{
   font-weight: bold;
   margin: 0.573vw;
   border-radius: 1.563vw;
+  transition: background-color 0.5s, color 0.5s
+}
+
+.button:hover{
+  background-color: #8D3232;
+  border-color: transparent;
+  color: #fff;
 }
 
 @media screen and (max-width: 834px) {
@@ -189,7 +198,7 @@ body{
 
 @media screen and (max-width: 834px) {
   .callus-button {
-    width: 36.853vw;
+    width: 37.3vw;
     line-height: 6.715vw;
     font-size: 2.398vw;
   }
@@ -432,11 +441,26 @@ body{
   transition-timing-function:linear!important; 
 }
 
+.mySwipemm{
+  display: none;
+}
+
 @media screen and (max-width: 580px) {
   .swiper-wrapper {
     left: 9vw !important;
     margin-right: 0px !important;
   }
+
+  .mySwipemm{
+    display: block;
+  }
+
+  .swiper-slide-mbi{
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  
 }
 
 
@@ -671,19 +695,20 @@ height: 2.145vw;
 
 .mg-foot{
 padding-top: 0.521vw;
+height: 24px;
 }
 
 .text-wrapper {
-width: 18.229166666666668vw;
-top: 0;
-left: 0;
-font-family: "DM Sans-Bold", Helvetica;
-font-weight: 700;
-color: #8d3232;
-font-size: 1.5625vw;
-text-align: center;
-letter-spacing: 0;
-line-height: normal;
+  width: 18.229166666666668vw;
+  top: 0;
+  left: 0;
+  font-family: "DM Sans";
+  font-weight: 700;
+  color: #8d3232;
+  font-size: 1.5625vw;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 
@@ -708,7 +733,7 @@ font-size: 1.361vw !important;
 font-size: 1.361vw;
 color: #232323;
 text-align: center;
-font-family: DM Sans;
+font-family: "DM Sans";
 font-style: normal;
 font-weight: 700;
 line-height: 103.6%;
@@ -734,7 +759,7 @@ line-height: 103.6%;
   width: 113px;
   top: 0;
   left: 0;
-  font-family: "DM Sans-Bold", Helvetica;
+  font-family: "DM Sans";
   font-weight: 700;
   color: #8d3232;
   font-size: 17px;
@@ -878,32 +903,31 @@ line-height: 103.6%;
 
 
 
-
-
 .cn-btn{
-color: #ffb22b;
-text-align: center;
-width: 19.100vw;
-height: 3.480vw;
-line-height: 1.042vw;
-border-radius: 33.719vw;
-border: 1.502px solid #ffb22b;
-align-self: center;
-flex-grow: 1;
-align-items: center;
-margin: auto 0;
-font: 700 1.250vw DM Sans, sans-serif;
-background-color: transparent;
-cursor: pointer;
+  color: #ffb22b;
+  text-align: center;
+  width: 19.100vw;
+  height: 3.480vw;
+  line-height: 1.042vw;
+  border-radius: 33.719vw;
+  border: 1.502px solid #ffb22b;
+  align-self: center;
+  flex-grow: 1;
+  align-items: center;
+  margin: auto 0;
+  font: 700 1.250vw "DM Sans", sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.5s, background-color 0.5s, color 0.5s
 }
 
-.cn-btn:hover{
-  border: 2px solid transparent;
-  color: #8D3232;
-  transform: scale(1.05);
-  will-change: transform;
+.cn-btn:hover {
   background-color: #FFB22B;
+  border-color: transparent;
+  color: #8D3232;
 }
+
+
 
 .call-btn{
 background-color: #FFB22B;
@@ -988,7 +1012,7 @@ transform: translateY(4.1666666666667vw) !important;
   flex-grow: 1;
   align-items: center;
   margin: auto 0;
-  font: 700 1.918vw DM Sans, sans-serif;
+  font: 700 1.918vw "DM Sans", sans-serif;
   background-color: transparent;
   cursor: pointer;
 }
@@ -1021,7 +1045,7 @@ transform: translateY(4.1666666666667vw) !important;
   text-align: center;
   width:  63.226vw;
   height: 11.520vw;
-  font-family: "DM Sans-Bold", Helvetica;
+  font-family: "DM Sans";
   font-weight: 700;
   color: #ffb22b;
   font-size: 4.138vw;

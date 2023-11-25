@@ -34,14 +34,14 @@
         <image class="absolute coconut" alt="alternate text" src="./assets/coconut.svg"></image>
       </div>
       <h1 class="font-bold font-family">Harvested from the Heart<br/>of Organic Richness</h1>
-      <div id="parent" class="justify-center pt-[1.510vw] padding-button margin-right">
+      <div id="parent" class="justify-center pt-[1.510vw] padding-button margin-right" style="margin-left: -0.365vw;">
         <a href="tel:+1234567890" class="button bg-[#8D3232] text-white callus-button">Call Us</a>
         <a id="email" href="mailto:info@example.com" class="button mystyle bg-[#EFE1C5] text-[#423E35]">Email Us</a>
         <a id="whatsapp" href="whatsapp.com" class="button mystyle bg-[#EFE1C5] text-[#423E35]">WhatsApp Us</a>
       </div>
       <div class="flex flex-col items-stretch">
         <div class="text-[#423E35] Approved font-bold  whitespace-nowrap mt-8">Approved by</div>
-        <div class="flex items-start mr-0 mt-3 mb-4 max-md:flex-wrap">
+        <div class="flex mr-0 mt-3 mb-4 max-md:flex-wrap">
           <img loading="lazy" class="badges" src="./assets/coconut development authority.svg" />
           <img loading="lazy" class="badges" src="./assets/Coconut Research Institute.svg"  />
           <img loading="lazy" class="badges" src="./assets/coconut cultivation board.svg"  />
@@ -127,7 +127,7 @@
   </section>
   <section>
     <div class="upper">
-      <div class="swiper-container">
+      <!-- <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide-img">
               <img src="https://picsum.photos/600/400">
@@ -162,7 +162,45 @@
           </div>
         </div>
         
-      </div>
+      </div> -->
+
+      
+            
+
+            <div class="swiper mySwipemm ">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="swiper-slide-mbi" src="./assets/KingCoconutwater.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide-mbi" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide-mbi" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide-mbi" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide-mbi" src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide-mbi" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide-mbi" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide-mbi" src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide-mbi" src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div>
+              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            
+      
     </div>
   </section>
   <section>
@@ -368,6 +406,64 @@
             disableOnInteraction: false
       },
     });
+
+    var swiper = new Swiper('.mySwipermobi', {
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		loop: true,
+    slidesPerView: 3,
+    centeredSlides: true,
+    effect: "coverflow",
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 80,
+			depth: 200,
+			modifier: 1, // 2,3
+			slideShadows : false,
+		}
+	});
+
+  var swiper = new Swiper(".mySwipemm", {
+        effect: "coverflow",
+        grabCursor: true,
+        loop: true,
+        slidesPerView: 3,
+        centeredSlides: true,
+        coverflowEffect: {
+          rotate: 0,              // added (Rotate of the prev and next slides)
+        depth: 200,             // added (Depth of the prev and next slides)
+        stretch: 30,            // added (Space between the slides)
+        modifier: 1,            // added (Multiply the values of rotate, depth, and stretch)
+        scale: 1,               // added (Size ratio of the prev and next slides)
+        slideShadows: false,    // added (Presence of shadow on the surfaces of the prev and next slides)
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints:{
+          580: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+      
+      
+    },
+   
+      freeMode: true,
+      spaceBetween: 0,
+      draggable : true,
+      hide: false,
+      snapOnRelease: true,
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: true,
+      },
+      speed: 5000,
+      freeModeMomentumRatio: false,
+      allowTouchMove: false,
+      });
   </script>
 </body>
 </html>
