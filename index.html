@@ -58,7 +58,7 @@
           <span class="text-[#423E35]">Welcome to</span>
           <span class="text-[#FA7333]">Cococrest</span>
         </h1>
-        <p class="text-[#423E35] welcome-para w-full mt-7">
+        <p class="text-[#423E35] welcome-para w-full mt-[1.042vw] mb-[1.042vw]">
           Your gateway to the pinnacle of organic coconut excellence. Nestled at the crest of quality and freshness, Cococrest is a brand that embodies the essence of nature's bounty. From our tropical haven to your home, we curate and export premium organic coconuts, ensuring that each Cococrest produce carries the unmistakable mark of pure, wholesome goodness.
         </p>
       </div>
@@ -66,10 +66,10 @@
   </section>
   <section>
     <div class="position mr-[13.177vw] tab-center1">
-      <div class="bg-[#EFE1C5] flex grow basis-[0%] flex-col items-center pt-12 pb-9 px-2 ">
+      <div class="bg-[#EFE1C5] flex grow basis-[0%] flex-col items-center pt-[2.5vw] pb-[1.875] px-2 ">
         <div class="flex w-full flex-col items-stretch mt-2.5  ">
           <div class="max-md:max-w-full rd-mg">
-            <div class="gap-5 flex max-md:items-stretch">
+            <div class="gap-[3.281vw] flex max-md:items-stretch">
               <div class="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
                 <img loading="lazy" src="./assets/Leaf.svg"class="aspect-[0.99] object-contain object-center w-full overflow-hidden " />
                 <div class="self-center flex  justify-between gap-5   flex-nowrap justify-center mt-6">
@@ -207,7 +207,7 @@
     <img class="flower-left absolute" alt="alternate text" src="./assets/flower left.svg" />
     <div class="position mr-[13.177vw] margin-one">
       <h1 class="font-bold leading-[2.708vw] fresh">Our fresh<br/>export quality produce</h1>
-      <div class="mt-12">
+      <div class="mt-[2.708vw]">
         <img class="coconut-banner top-[2.708vw]" alt="alternate text" src="./assets/king coconut image.svg"/>
       </div>
       <div class="slider-position">
@@ -429,7 +429,7 @@
         effect: "coverflow",
         grabCursor: true,
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: 5,
         centeredSlides: true,
         coverflowEffect: {
         rotate: 0,              // added (Rotate of the prev and next slides)
@@ -443,8 +443,16 @@
           el: ".swiper-pagination",
         },
         breakpoints:{
+          834: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
           580: {
             slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          320: {
+            slidesPerView: 1,
             spaceBetween: 10,
           },
         },

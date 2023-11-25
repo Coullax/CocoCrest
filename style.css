@@ -444,6 +444,10 @@ body{
 .mySwipemm{
   display: none;
 }
+.swiper-slide-mbi{
+  width: 13.333vw !important;
+  height: 13.333vw !important;
+}
 
 @media screen and (max-width: 580px) {
   .swiper-wrapper {
@@ -456,8 +460,8 @@ body{
   }
 
   .swiper-slide-mbi{
-    width: 193px !important;
-    height: 193px !important;
+    width: 33.276vw !important;
+    height: 33.276vw !important;
   }
 
   
@@ -531,8 +535,8 @@ body{
 }
 
 .slider-position {
-  padding-top: 2.500vw;
-  bottom: 31.635vw;
+  padding-top: 0;
+  padding-bottom: 1.979vw;
 }
 
 .mobile-swiper{
@@ -628,6 +632,7 @@ body{
   .coconut-banner {
     width: 100%;
     height: 100%;
+    margin-top: 9.65vw;
   }
   .Tapioca {
     width: 100%;
@@ -937,7 +942,7 @@ color: #8D3232;
 
 .contact-position {
 margin-left: 13.088%;
-padding-top: 2.5vw;
+padding-top: 0.909vw;
 bottom: 1vw;
 position: relative;
 }
