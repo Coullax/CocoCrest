@@ -294,7 +294,9 @@ body{
 .badges {
   width: 5vw;
 }
-
+.mar-rt{
+  margin-right: 9px;
+}
 @media screen and (max-width: 834px) {
   .badges {
     width: 9.378vw;
@@ -690,7 +692,12 @@ height:3.901vw;
 }
 
 .pd-footer{
-padding-right: 1.563vw;
+  padding-right: 1.563vw;
+  cursor: pointer;
+}
+
+.s-icons a{
+  cursor: default;
 }
 
 .cococrest-logo-footer{
