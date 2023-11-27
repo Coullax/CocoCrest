@@ -128,11 +128,32 @@ body{
   display: none;
 }
 
+.tab-top-none {
+  display: none;
+}
+@media screen and (max-width: 834px) {
+  .tab-top-none {
+    display: block;
+  }
+  .top-two {
+    display: none;
+  }
+  .tab-design-cococrest-two{
+    width: 4.077vw;
+  }
+  .tab-design-cococrest-one{
+    width: 5.036vw;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .top-none {
   display: block;
   }
   .top-two {
+    display: none;
+  }
+  .tab-top-none {
     display: none;
   }
 }
@@ -602,7 +623,8 @@ body{
 @media screen and (max-width: 834px) {
   .flower-left{
     width: 6.932vw;
-    top: 94.245vw;
+    position: relative;
+    top: -108.755vw;
   }
 }
 
@@ -614,7 +636,7 @@ body{
 
 .flower-right {
   width: 6.771vw;
-  margin-top: -181.979vw;
+  margin-top: -175.979vw;
 }
 
 @media screen and (max-width: 834px) {
