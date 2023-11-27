@@ -612,6 +612,24 @@ body{
   }
 }
 
+.flower-right {
+  width: 6.771vw;
+  margin-top: -181.979vw;
+}
+
+@media screen and (max-width: 834px) {
+  .flower-right {
+    width: 6.932vw;
+    top: -2.755vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .flower-right {
+    display: none;
+  }
+}
+
 
 .coconut-banner {
   width: 73.698vw;
@@ -623,7 +641,7 @@ body{
 }
 
 .margin-one{
-  margin-top: -9vw;
+  margin-top: -27vw;
 }
 
 
