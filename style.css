@@ -388,22 +388,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cn-tx-web{
   font-size: 1.361vw !important;
 }
@@ -688,42 +672,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
   background-color: #FFB22B;
   height: 5.964vw;
@@ -868,7 +816,7 @@ line-height: 103.6%;
   font-size: 3.103vw !important;
 }
 .footer {
-  background-image: url(./assets/footer-bg.svg) !important;
+  background-image: url(./assets/webp_images/footer-bg.webp) !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   height: 34.828vw;
@@ -941,13 +889,6 @@ line-height: 103.6%;
 }
 
 
-
-
-
-
-
-
-
 .new-one {
   margin-top: -41vw;
 }
@@ -1001,7 +942,7 @@ position: relative;
 
 
 .contact-br{
-background-image: url(./assets/contact-bg.svg);
+background-image: url(./assets/webp_images/contact-bg.webp);
 background-size: cover;
 background-repeat: no-repeat;
 height: 11.458vw;
@@ -1044,7 +985,7 @@ transform: translateY(4.1666666666667vw) !important;
   margin-right: 0 !important;
 }
 .contact-br{
-  background-image: url(./assets/tab-bg-cn.svg);
+  background-image: url(./assets/webp_images/tab-bg-cn.webp);
   background-size: cover;
   background-repeat: no-repeat;
   height: 15.827vw !important;
@@ -1129,16 +1070,6 @@ transform: translateY(4.1666666666667vw) !important;
 }
 
 }
-
-
-
-
-
-
-
-
-
-
 
 .main-container {
 background-color: #8d3232;
