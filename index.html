@@ -18,10 +18,9 @@
   <title>Cococrest</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet"/>
+  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
   <link rel="stylesheet" href="style.css">
-  <link type="html/text" rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
   <section>
@@ -30,7 +29,7 @@
       <image loading="lazy" class="Mask-group1 Mask-group1-two" alt="alternate text" src="./assets/webp_images/Vector.webp"></image>
       <image loading="lazy" class="Mask-group" alt="alternate text" src="./assets/webp_images/Group 1000002845.webp"></image>
       <image loading="lazy" class="coconut-leaves-1 coconut-leaves-one" alt="alternate text" src="./assets/webp_images/Mask group.webp"></image>
-      <image loading="lazy" class="coconut-leaves-1 coconut-leaves-two" alt="alternate text" src="./assets/webp_images/Mask group-coconut.webp"></image>
+      <image loading="eager" class="coconut-leaves-1 coconut-leaves-two" alt="alternate text" src="./assets/right_coconut_leaf.svg"></image>
     </div>
     <div class="flex justify-between gap-5 max-md:flex-wrap">
       <img class="-mt-[1.781vw] design-cococrest-two top-two" loading="lazy" src="./assets/design.svg" alt="Image 1" />
