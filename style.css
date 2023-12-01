@@ -319,6 +319,7 @@ body{
 
 .badges {
   width: 5vw;
+  height: 5vw;
 }
 .mar-rt{
   margin-right: 9px;
@@ -326,6 +327,25 @@ body{
 @media screen and (max-width: 834px) {
   .badges {
     width: 9.378vw;
+    height: 9.378vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .badges {
+    width: 13.448vw;
+    height: 13.448vw;
+  }
+}
+
+.shadow-adjust {
+  width: 27.083vw;
+  height: 2.292vw;
+}
+
+@media screen and (max-width: 834px) {
+  .shadow-adjust {
+    display: none;
   }
 }
 
