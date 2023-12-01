@@ -1109,3 +1109,55 @@ position: relative;
   display: none;
 }
 }
+
+
+
+/* .containerll {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('path/to/your/large-image.jpg') center/cover no-repeat;
+} */
+.coconut-leaf {
+  width: 23.4%;
+  height: auto;
+  position: absolute;
+  top: -2.656vw;
+  left: -0.260vw; /* Adjust this value based on your layout */
+  transform-origin: top center;
+  animation: sway 2s ease-in-out infinite alternate;
+  z-index: 999999;
+}
+
+.coconut-leaf2 {
+  width: 23.4%;
+  height: auto;
+  position: absolute;
+  top: 7.344vw;
+  left: 0.260vw; /* Adjust this value based on your layout */
+  transform-origin: top center;
+  animation: sway2 2s ease-in-out infinite alternate;
+  z-index: 999999;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-5deg) translateY(-43px) translateX(-43px);
+  }
+  100% {
+      transform: rotate(5deg) translateY(5px);
+  }
+}
+
+@keyframes sway2 {
+  0% {
+    transform: rotate(47deg) translateY(105px);
+  }
+  100% {
+      transform: rotate(31deg) translateY(5px);
+  }
+}
+
+.top-section{
+  margin-top: 13vw;
+}
