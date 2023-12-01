@@ -306,9 +306,9 @@ body{
 }
 
 .coconut {
-  width: 39.323vw;
+  width: 50vw;
   margin: 0px 34.375vw 0px;
-  margin-top: -1vw;
+  margin-top: -4vw;
   object-fit: cover;
   flex-grow: 1;
   flex-basis: 0%;
@@ -318,7 +318,6 @@ body{
   .coconut {
     width: 43.285vw;
     margin: 0px 37.759vw 0px;
-    margin-top: -5%;
   }
 }
 
