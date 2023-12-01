@@ -1112,12 +1112,11 @@ position: relative;
 
 
 
-/* .containerll {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background: url('path/to/your/large-image.jpg') center/cover no-repeat;
-} */
+
+
+
+
+
 .coconut-leaf {
   width: 23.4%;
   height: auto;
@@ -1160,4 +1159,103 @@ position: relative;
 
 .top-section{
   margin-top: 13vw;
+}
+
+
+@media screen and (max-width: 834px) {
+  .top-section {
+    margin-top: 48vw;
+  }
+
+  .coconut-leaf {
+    width: 23.4%;
+    height: auto;
+    position: absolute;
+    top: -1.6560000000000001vw;
+    left: -1.2599999999999998vw;
+    transform-origin: top center;
+    animation: sway 2s ease-in-out infinite alternate;
+    z-index: 999999;
+  }
+
+  .coconut-leaf2 {
+    width: 23.4%;
+    height: auto;
+    position: absolute;
+    top: 7.344vw;
+    left: -2.74vw;
+    transform-origin: top center;
+    animation: sway2 2s ease-in-out infinite alternate;
+    z-index: 999999;
+  }
+
+  @keyframes sway {
+    0% {
+      transform: rotate(-5deg) translateY(-26px) translateX(-43px);
+    }
+
+    100% {
+      transform: rotate(5deg) translateY(5px);
+    }
+  }
+
+  @keyframes sway2 {
+    0% {
+      transform: rotate(37deg) translateY(3px) translateX(51px);
+    }
+
+    100% {
+      transform: rotate(31deg) translateY(5px);
+    }
+  }
+
+}
+  
+  
+  
+  
+@media screen and (max-width: 580px) {
+  .top-section{
+    margin-top: 50vw;
+  }
+
+  .coconut-leaf {
+    width: 53.4%;
+    height: auto;
+    position: absolute;
+    top: -2.656vw;
+    left: -1.260vw; /* Adjust this value based on your layout */
+    transform-origin: top center;
+    animation: sway 2s ease-in-out infinite alternate;
+    z-index: 999999;
+  }
+  
+  .coconut-leaf2 {
+    width: 63.4%;
+    height: auto;
+    position: absolute;
+    top: 16.344vw;
+    left: -9.74vw; /* Adjust this value based on your layout */
+    transform-origin: top center;
+    animation: sway2 2s ease-in-out infinite alternate;
+    z-index: 999999;
+  }
+  
+  @keyframes sway {
+    0% {
+      transform: rotate(-5deg) translateY(-26px) translateX(-43px)
+    }
+    100% {
+        transform: rotate(5deg) translateY(5px);
+    }
+  }
+  
+  @keyframes sway2 {
+    0% {
+      transform: rotate(37deg) translateY(3px) translateX(51px);
+    }
+    100% {
+        transform: rotate(31deg) translateY(5px);
+    }
+  }
 }
