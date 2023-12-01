@@ -627,13 +627,17 @@ body{
 
 .flower-left{
   width: 6.771vw;
+  position: relative;
+  top: -40vw;
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 834px) {
   .flower-left{
     width: 6.932vw;
     position: relative;
-    top: -108.755vw;
+    top: -38.754999999999995vw;
+    transform: rotate(180deg);
   }
 }
 
@@ -645,13 +649,15 @@ body{
 
 .flower-right {
   width: 6.771vw;
-  margin-top: -175.979vw;
+  top: 5.020999999999987vw;
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 834px) {
   .flower-right {
     width: 6.932vw;
-    top: -2.755vw;
+    top: 7.245000000000001vw;
+    transform: rotate(180deg);
   }
 }
 
