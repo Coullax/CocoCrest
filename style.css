@@ -880,7 +880,7 @@ line-height: 103.6%;
   height: 50px;
 }
 .cococrest-logo-footer {
-  width: 39.655vw;
+  width: 43vw;
   height: 5.690vw;
   text-align: -webkit-center;
 }
@@ -924,6 +924,17 @@ line-height: 103.6%;
 
 }
 
+@media screen and (max-width: 420px) {
+  .cococrest-logo-footer {
+    margin-left: 1.390vw;
+  }
+}
+
+@media screen and (max-width: 334px) {
+  .cococrest-logo-footer {
+    margin-left: 2.190vw;
+  }
+}
 
 .new-one {
   margin-top: -41vw;
