@@ -519,10 +519,6 @@ body{
   align-items: center;
   width: auto;
   margin-right: 8px;
-  img {
-    max-width: 10px;
-    max-height: 655px;
-  }
 }
 
 
@@ -557,22 +553,22 @@ body{
 
 .swiper-slide img {
   display: block;
-  width: 21.458vw;
-  height: 20.052vw;
+  width: 21.458vw !important;
+  height: 20.052vw !important;
   border-radius: 0.938vw;
   object-fit: cover;
 }
 
 @media screen and (max-width: 834px) {
   .swiper-slide img{
-    width: 19.257vw;
+    width: 19.257vw !important;
   }
 }
 
 @media screen and (max-width: 580px) {
   .swiper-slide img{
-    width: 75.862vw;
-    height: 75.862vw;
+    width: 75.862vw !important;
+    height: 75.862vw !important;
   }
 }
 
